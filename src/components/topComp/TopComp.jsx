@@ -28,7 +28,7 @@ function TopComp() {
           <div className='top-line percaa'>PerCAA 2025</div>
           <div className="topmarquee">3<sup>rd</sup> International Conference on Pervasive Computing Advances and Applications</div>
           
-          <div className='sponsor'>TECHNICALLY SPONSERED BY MEERUT & JAIPUR ACM PROFESSIONAL CHAPTER</div>
+          {/*<div className='sponsor'>TECHNICALLY SPONSERED BY MEERUT & JAIPUR ACM PROFESSIONAL CHAPTER</div>
           {/*<div className='top'>
           <div className="top-logos">
           <img src={pce} alt="poornima university logo" className='pce_logo' />

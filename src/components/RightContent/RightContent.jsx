@@ -45,7 +45,7 @@ const RightContent = () => {
                     {/* <img src={Poornima} alt="" /> */}
                     </div>
                     <div className="smallLogosTechSponsers">
-                        <img src={ACM_Jaipur} alt="" />
+                        
                         <img src={naac} alt="" />
                         {/* <img src={ACM_merrut} alt="" /> */}
                     </div>
@@ -90,16 +90,16 @@ const RightContent = () => {
                         <img src={Scopus} alt="" />
                     </div>
                 </div>
-                <div className="sectionHeading smallSectionHeading">Technically Sponsored by</div>
-                <div className="technicalSponsers">
-                    {/* <img src={Poornima_Logo_full} alt="" /> */}
+                {/*<div className="sectionHeading smallSectionHeading">Technically Sponsored by</div>*/}
+                {/* <div className="technicalSponsers">
+                    {/* <img src={Poornima_Logo_full} alt="" />*/} 
                     {/* <img src={IET_logo} alt="" /> */}
-                    <img className='right_acm_chapterLogo' src={ACM_chapter} alt="" />
-                    <div className="smallLogosTechSponsers">
+                    {/*<img className='right_acm_chapterLogo' src={ACM_chapter} alt="" />
+                    {/*<div className="smallLogosTechSponsers">
                         {/* <img src={ACM_Jaipur} alt="" /> */}
-                        <img src={ACM_merrut} alt="" />
-                    </div>
-                </div>
+                        {/*<img src={ACM_merrut} alt="" />
+                    {/*</div>
+                {/*</div> */}
                 <div className="sectionHeading smallSectionHeading">Media Partners</div>
                 <div className="technicalSponsers">
                     <img onClick={handleclickmedia1} style={{ marginTop: "8px", cursor: "pointer" }} className='right_acm_chapterLogo' src={Int_CA} alt="International Conference Alerts" />
