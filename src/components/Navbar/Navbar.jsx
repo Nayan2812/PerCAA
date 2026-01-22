@@ -43,6 +43,14 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
+            <a to="#">Lecture Series</a>
+            <ul>
+              <li><Link onClick={handleToggle} to={''}>Track 1:Pervasive and Ubiquitous Computing</Link></li>
+              <li><Link onClick={handleToggle} to={''}>Track 2: Mobile Communication & Networking</Link></li>
+              <li><Link onClick={handleToggle} to={''}>Track 3: Robotics for Healthcare and Assistive Technologies</Link></li>
+            </ul>
+          </li>
+          <li>
             <a to="#">Archive</a>
             <ul>
               <li><Link onClick={handleToggle} to={'/PerCAA-2024'}>PerCAA-2024</Link></li>
