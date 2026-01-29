@@ -43,13 +43,63 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a to="#">Lecture Series</a>
-            <ul>
-              <li><Link onClick={handleToggle} to={''}>Track 1:Pervasive and Ubiquitous Computing</Link></li>
-              <li><Link onClick={handleToggle} to={''}>Track 2: Mobile Communication & Networking</Link></li>
-              <li><Link onClick={handleToggle} to={''}>Track 3: Robotics for Healthcare and Assistive Technologies</Link></li>
-            </ul>
-          </li>
+  <a href="#">Lecture Series</a>
+  <ul className="dropdown">
+
+    {/* ===== Track 1 ===== */}
+    <li>
+      <a href="#">Track 1 ▸</a>
+      <ul className="sub-dropdown">
+        <li><Link to="">Ambient Intelligence</Link></li>
+        <li><Link to="">Speech and Image Processing</Link></li>
+        <li><Link to="">Energy-Efficient Pervasive Computing</Link></li>
+        <li><Link to="">Context Aware Systems</Link></li>
+        <li><Link to="">Stress / Emotional Response Analysis</Link></li>
+        <li><Link to="">Machine Learning in Pervasive Computing</Link></li>
+        <li><Link to="">Context Modeling and Reasoning</Link></li>
+        <li><Link to="">Internet of Things / Cyber Physical Systems</Link></li>
+        <li><Link to="">Human Computer Interaction</Link></li>
+        <li><Link to="">Augmented Reality</Link></li>
+        <li><Link to="">Wearable Computing</Link></li>
+        <li><Link to="">Smart Homes</Link></li>
+        <li><Link to="">Security and Privacy</Link></li>
+        <li><Link to="">Pervasive Healthcare Systems</Link></li>
+        <li><Link to="">Smart Vehicles</Link></li>
+      </ul>
+    </li>
+
+    {/* ===== Track 2 ===== */}
+    <li>
+      <a href="#">Track 2 ▸</a>
+      <ul className="sub-dropdown">
+        <li><Link to="">Mobile Communication</Link></li>
+        <li><Link to="">Wireless Sensor Networks</Link></li>
+        <li><Link to="">Software Defined Networking</Link></li>
+        <li><Link to="">Body Sensor Networks</Link></li>
+        <li><Link to="">Adaptive Communication Protocols</Link></li>
+        <li><Link to="">Vehicular Networks</Link></li>
+        <li><Link to="">Intelligent Transportation Systems</Link></li>
+        <li><Link to="">Delay Tolerant Networks</Link></li>
+        <li><Link to="">Near Field Communication</Link></li>
+      </ul>
+    </li>
+
+    {/* ===== Track 3 ===== */}
+    <li>
+      <a href="#">Track 3 ▸</a>
+      <ul className="sub-dropdown">
+        <li><Link to="">Healthcare Robotics</Link></li>
+        <li><Link to="">Assistive Technologies</Link></li>
+        <li><Link to="">Robotic Rehabilitation</Link></li>
+        <li><Link to="">Surgical Robotics</Link></li>
+        <li><Link to="">AI-based Diagnostics</Link></li>
+        <li><Link to="">Remote Monitoring Systems</Link></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
           <li>
             <a to="#">Archive</a>
             <ul>

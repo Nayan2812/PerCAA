@@ -1,4 +1,4 @@
-/* General Styles */
+/* ===== GENERAL ===== */
 .clear {
   clear: both;
   display: flex;
@@ -8,17 +8,19 @@
   justify-content: space-evenly;
 }
 
-.cross{
-  font-size: 20px;
+.cross {
+  font-size: 26px;
+  color: white; /* White cross */
 }
 
 .navbar {
   user-select: none;
   background-color: rgb(22, 75, 150);
-  overflow: hidden;
+  overflow: visible;
   width: 100vw;
   height: 6vh;
-  z-index: -100;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -27,125 +29,158 @@
   padding: 0;
 }
 
+.navbar ul li {
+  position: relative;
+}
 
-
-.navbar ul li a{
+.navbar ul li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
-  padding: 1px 16px;
+  padding: 6px 16px;
   text-decoration: none;
   font-weight: bold;
-  /* border-radius: 550px; */
 }
-
 
 .navbar ul li a:hover {
-  /* background-color: rgb(22, 75, 150); */
   background-color: #1a0987;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
+/* ===== MAIN DROPDOWN ===== */
 .navbar ul li ul {
   display: none;
   position: absolute;
-  /* top: 100%; */
-  /* left: 50%; Center horizontally */
-  transform: translateX(-7%); 
-  background: linear-gradient(to right, #0042d09e, #0042d091);
-  min-width: 180px;
-  z-index: 999;
-  opacity: 95%;
-  backdrop-filter: blur(10px);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: rgba(0, 66, 208, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  min-width: 220px;
   border-radius: 10px;
-  padding: 8px 0;
-  text-align: center; /* Align text nicely */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
 }
 
-/* .navbar ul li:hover ul {
-  display: block;
-} */
-
-
-.navbar ul li ul li a {
-  padding: 12px 16px;
-}
-
-.navbar ul li:hover ul {
+.navbar ul li:hover > ul {
   display: block;
 }
 
+.navbar ul li ul li {
+  white-space: nowrap;
+}
+
+/* ===== SUB DROPDOWN ===== */
+.navbar ul li ul.sub-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;        /* Start from right edge of main dropdown */
+  top: 0;
+  margin-left: 25px; /* 👈 Push it further right */
+  
+  background: rgba(0, 66, 208, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  min-width: 280px;  /* Slightly wider */
+  border-radius: 10px;
+  padding: 6px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* Show sub-dropdown on hover */
+.navbar ul li ul li:hover > ul.sub-dropdown {
+  display: block;
+}
+
+
+/* Dropdown link styling */
+.navbar ul li ul a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  font-size: 14px;
+}
+
+.navbar ul li ul a:hover {
+  background: #ED3237;
+  border-radius: 6px;
+}
+
+/* ===== TOGGLE BUTTON ===== */
 .toggle-button {
   display: none;
   position: absolute;
-  top: 36px;
-  right: 10px;
-  z-index: 3; /* Ensure the button is above other elements */
+  top: 12px;
+  right: 15px;
+  z-index: 2000;
+  color: white;
+  font-size: 26px;
 }
 
-.close {
-  display: none;
-}
+/* ===== RESPONSIVE ===== */
 
-/* Responsive Styles */
 @media screen and (max-width: 1040px) {
   .navbar {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 840px) {
   .navbar {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
+/* ===== MOBILE MENU ===== */
 @media screen and (max-width: 785px) {
+  .toggle-button {
+    display: block;
+  }
+
   .navbar {
-    width: 100%;
-    z-index: 2;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    background-color: rgb(22, 75, 150);
   }
 
-  .toggle-button {
-    display: block;
-    color: white;
+  .navbar.toggleActive {
+    transform: translateX(0);
   }
 
   .clear {
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
-    gap: 15px;
+    align-items: center;
+    gap: 18px;
+    font-size: 18px;
+    margin-top: 60px;
   }
 
   .navbar ul li a {
-    padding: 9px 0; /* ✅ Extra clickable area for mobile */
-    align-items: center;
-  }
-  .navbar ul li ul {
-    transform: translateX(-13%);  
-    align-items: center;
-    
-  }
-  .close {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: white;
-    font-size: 32px;
-    font-weight: 500;
-    opacity: 1;
+    padding: 10px 0;
   }
 
-  .navbar.toggleActive {
-    transform: translateX(0);
+  /* Mobile dropdowns appear centered */
+  .navbar ul li ul {
+    position: static;
+    transform: none;
+    margin-top: 5px;
+  }
+
+  .navbar ul li ul.sub-dropdown {
+    position: static;
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
