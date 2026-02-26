@@ -100,11 +100,11 @@ const RightContent = () => {
                         {/*<img src={ACM_merrut} alt="" />
                     {/*</div>
                 {/*</div> */}
-                <div className="sectionHeading smallSectionHeading">Media Partners</div>
+                {/* <div className="sectionHeading smallSectionHeading">Media Partners</div>
                 <div className="technicalSponsers">
                     <img onClick={handleclickmedia1} style={{ marginTop: "8px", cursor: "pointer" }} className='right_acm_chapterLogo' src={Int_CA} alt="International Conference Alerts" />
                     <img onClick={handleclickmedia2} style={{ marginTop: "8px", cursor: "pointer" }} className='right_acm_chapterLogo' src={ACAlert} alt="All Conference Alerts" />
-                </div>
+                </div> */}
 
                 {/* <div className="sectionHeading smallSectionHeading">Selected Extended Post Conference Papers will be published in</div>
                 <div className="conferencePapers">
