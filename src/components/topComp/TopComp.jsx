@@ -25,8 +25,8 @@ function TopComp() {
           </div>
         <div className="top-head">
           {/* <div className='top-line'>International Conference on Pervasive Computing Advances and Applications</div> */}
-          <div className='top-line percaa'>PerCAA 2025</div>
-          <div className="topmarquee">3<sup>rd</sup> International Conference on Pervasive Computing Advances and Applications</div>
+          <div className='top-line percaa'>PerCAA 2026</div>
+          <div className="topmarquee">{/*3<sup>rd</sup>*/} International Symposium on Pervasive Computing Advances and Applications</div>
           
           {/*<div className='sponsor'>TECHNICALLY SPONSERED BY MEERUT & JAIPUR ACM PROFESSIONAL CHAPTER</div>
           {/*<div className='top'>
@@ -37,7 +37,7 @@ function TopComp() {
           <img className='spocus_LOGO' src={spocus_LOGO} alt='spocus_LOGO'  />
         </div>
         </div>*/}
-          <div className='top-line'> 07<sup>th</sup> - 08<sup>th</sup> November, 2025 </div>
+          <div className='top-line'> 13<sup>th</sup> {/*- 08<sup>th</sup>*/} March, 2026 </div>
         </div>
         {/*<div className="top-logos">
           {/* <img src={acm} alt="Poornima College Of Engineering" className='sp_logo' /> 

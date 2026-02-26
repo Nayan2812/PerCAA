@@ -31,7 +31,7 @@ function Home() {
           <div className={`popup_container ${showPopUp ? 'show' : ''}`}>
               <div className="top_heading_container">
                   <div className="top_heading_container_2">
-                    <p className="percaa_pop">PerCAA 2025</p>
+                    <p className="percaa_pop">PerCAA 2026</p>
                     {/*<div className="perca_top_sub">Important Links</div>*/}
                   </div>
                   <div className="close_icon" onClick={closebuttonHandler}>
@@ -59,7 +59,7 @@ function Home() {
             <div className="homeheading">ABOUT THE CONFERENCE</div>
             <div className="paracontent">
               <p>
-                PerCAA-2025(Pervasive Computing Advances and Applications) aim is to unite scholars, scientists, and researchers, facilitating the exchange of their knowledge, expertise, and experiences concerning advancements in the field of computing, as well as sciences and communication technologies.
+                PerCAA-2026(Pervasive Computing Advances and Applications) aim is to unite scholars, scientists, and researchers, facilitating the exchange of their knowledge, expertise, and experiences concerning advancements in the field of computing, as well as sciences and communication technologies.
               </p>
               <p>
                 The conference involve at all levels the leading academicians from India and abroad having expertise in Pervasive Computing Domain. Maintaining Quality of research and publications is the primary objective of the organizers. Dr. Sajal Das and Dr. Mohan Kumar are founder members of IEEE Conference on Pervasive Computing (PerCom) organizing since 2003. The advice and support from them has been sought for its planning and execution. The conference aims to create a leading interdisciplinary platform, fostering global connections among educators, researchers, and practitioners. Furthermore, it will facilitate the presentation and discussion of the latest innovations, trends, and issues in the relevant research areas.
