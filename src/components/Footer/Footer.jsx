@@ -16,9 +16,9 @@ const Footer = () => {
       <div className="footer-content">
         {/* About Section */}
         <div className="footer-section about">
-          <h3>PerCAA 2025</h3>
+          <h3>PerCAA 2026</h3>
           <p>
-            International Conference on Pervasive Computing Advances and Applications (PerCAA 2025),
+            International Symposium on Pervasive Computing Advances and Applications (PerCAA 2026),
             hosted by Poornima College of Engineering, Jaipur.
           </p>
         </div>
@@ -104,7 +104,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2025 Poornima College of Engineering | Designed & Developed by Team PerCAA</p>
+        <p>© 2026 Poornima College of Engineering | Designed & Developed by Team PerCAA</p>
         <p class='bottom'>
           <FaGlobe />{" "}
           <a href="https://percaa.poornima.org" target="_blank" rel="noopener noreferrer">
