@@ -42,11 +42,11 @@ const Navbar = () => {
               <li><Link onClick={handleToggle} to={'/speakers'}>Keynotes & Session Chairs</Link></li>
             </ul>
           </li>
-          <li>
+          {/* <li>
   <a href="#">Lecture Series</a>
   <ul className="dropdown">
 
-    {/* ===== Track 1 ===== */}
+   
     <li>
       <a href="#">Track 1 ▸</a>
       <ul className="sub-dropdown">
@@ -68,7 +68,7 @@ const Navbar = () => {
       </ul>
     </li>
 
-    {/* ===== Track 2 ===== */}
+    
     <li>
       <a href="#">Track 2 ▸</a>
       <ul className="sub-dropdown">
@@ -84,7 +84,6 @@ const Navbar = () => {
       </ul>
     </li>
 
-    {/* ===== Track 3 ===== */}
     <li>
       <a href="#">Track 3 ▸</a>
       <ul className="sub-dropdown">
@@ -98,8 +97,8 @@ const Navbar = () => {
     </li>
 
   </ul>
-</li>
-
+ </li> 
+*/}
           <li>
             <a to="#">Archive</a>
             <ul>
