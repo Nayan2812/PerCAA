@@ -45,11 +45,7 @@ const Footer = () => {
 </p>
 
 
-   <p>
-    <a href="mailto:percaa2025@poornima.org" style={{ color: 'inherit', textDecoration: 'none' }}>
-      <FaEnvelope  style={{marginTop:'4px', marginRight:'8px'}}/> percaa2025@poornima.org
-    </a>
-  </p>
+
 
   <p>
     <div style={{ display: 'flex', alignItems: 'flex-start' }}>
