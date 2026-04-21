@@ -40,8 +40,8 @@ const Registration = () => {
                             <thead>
                                 <tr>
                                     <th width="20%" align="center"><b>Category</b></th>
-                                    <th colspan="2" width="40%" align="center"><b>Early Bird Registration<br></br>(10 October, 2025)</b></th>
-                                    <th colspan="2" width="40%" align="center"><b>Late Registration<br></br> (20 October, 2025)</b></th>
+                                    <th colspan="2" width="40%" align="center"><b>Early Bird Registration<br></br>(05 May, 2026)</b></th>
+                                    <th colspan="2" width="40%" align="center"><b>Late Registration<br></br> (15 May, 2026)</b></th>
                                 </tr>
                                 <tr>
                                     <td width="20%" align="center">&nbsp;</td>

@@ -37,7 +37,7 @@ function TopComp() {
           <img className='spocus_LOGO' src={spocus_LOGO} alt='spocus_LOGO'  />
         </div>
         </div>*/}
-          <div className='top-line'> 13<sup>th</sup> {/*- 08<sup>th</sup>*/} March, 2026 </div>
+          <div className='top-line'> 20<sup>th</sup> - 21<sup>th</sup> May, 2026 </div>
         </div>
         {/*<div className="top-logos">
           {/* <img src={acm} alt="Poornima College Of Engineering" className='sp_logo' /> 

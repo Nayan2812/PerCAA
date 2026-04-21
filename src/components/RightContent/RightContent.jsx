@@ -13,14 +13,14 @@ import Poornima from "/img/Poornima-removebg.png"
 const RightContent = () => {
     // { event: "Acceptance Notification", date: '<span className="cut">August 31, 2024</span> September 15, 2024'},
     const dates = [
-        { event: "Start of Call for Papers", date: ['February 05, 2026'] },
+        { event: "Start of Call for Papers", date: ['April 10, 2026'] },
        /* { event: "Last Date of Paper Submission", date: ['August 21, 2025'] },*/
-        { event: "Final Paper Submission Deadline", date: [/*'September 01, 2025','September 15, 2025',*/'February 20, 2026','March 01, 2026'] },
-        { event: "Author Notification", date: [/*'September 15, 2025','September 30, 2025',*/'February 25, 2026','March 04, 2026'] },
-        { event: "Camera Ready Paper Submission", date: [/*'October 01, 2025',*/'February 20, 2026','March 07, 2026'] },
+        { event: "Final Paper Submission Deadline", date: [/*'September 01, 2025','September 15, 2025',*/'April 27, 2026','May 07, 2026'] },
+        { event: "Author Notification", date: [/*'September 15, 2025','September 30, 2025',*/'April 29, 2026','May 10, 2026'] },
+        { event: "Camera Ready Paper Submission", date: [/*'October 01, 2025',*/'April 27, 2026','May 13, 2026'] },
         
-        { event: "Last Date of Registration", date: ['February 25, 2026','March 08, 2026'] },
-        { event: "Conference Date", date: ['March 13, 2026'] },
+        { event: "Last Date of Registration", date: ['April 30, 2026','May 15, 2026'] },
+        { event: "Conference Date", date: ['May 20-21, 2026'] },
         /*{ event: "Early Bird Registration" , date:['October 10, 2025']},*/
     ];
 
