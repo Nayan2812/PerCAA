@@ -63,11 +63,7 @@ const Registration = () => {
                                 ))}
                             </tbody>
                         </table>
-                        <ul className={styles.list}>
-                            <li><strong>Paper Submission Link :</strong> <a href="https://cmt3.research.microsoft.com/PerCAA2025" className={styles.list_item}>Please Click  Here To Submit Paper</a></li>
-                            {/*<li><a href="/docs/RegistrationForm.pdf" download="Registraion Form" className={styles.list_item}>Registration Form</a></li>*/}
-                            
-                        </ul>
+                        
                     </div>
                     <div className={styles.heading}>
                         Payment Details :
